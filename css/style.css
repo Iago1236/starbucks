@@ -1,0 +1,116 @@
+/* Reset padrão */
+* {
+  margin: 0; /* margem da página */
+  padding: 0; /* espaçamento interno */
+  box-sizing: border-box; /* inclui padding/border no tamanho */
+  font-family: "Poppins", sans-serif;
+}
+
+body { 
+  padding-top: 20px; /* principal */
+  padding-left: 100px; /* esquerda */
+  padding-right: 100px; /* direita */
+  padding-bottom: 100px; /* embaixo */
+  background-image: url("/starbucks/img/fundo.jpg"); /* fundo */
+  background-position: center;
+  background-size: cover; /* cobre a tela */
+  overflow: hidden; /* evita barra de rolagem */
+}
+
+/* Conteúdo principal */
+.caixa-conteudo {
+  width: 100%;
+  display: flex; /* organiza em linha */
+  align-items: center; /* centraliza vertical */
+  justify-content: space-between; /* espaço entre texto e imagem */
+}
+
+/* Caixa de textos */
+.caixa-textos {
+  width: 600px;
+}
+
+/* Título */
+h2 {
+  color: #fff;
+  font-weight: 600; /* espessura da fonte */
+  font-size: 60px; /* tamanho */
+}
+
+.texto-starbucks {
+  color: #017143;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+
+.paragrafo {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Botão */
+button {
+  background-color: #017143;
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #00b368;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+}
+
+/* Caixa da imagem */
+.caixa-imagem {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 200px;
+}
+
+.imagem-copo {
+  width: 340px;
+}
+
+/* Menu das miniaturas */
+.caixa-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.botao-menu {
+  width: 80px;
+  cursor: pointer;
+  margin: 10px;
+  transition:  0.5;
+}
+
+.botao-menu:hover {
+  transform: translateY(-5px);
+  box-shadow:  0 rgba(0, 0, 0, 0.3);
+}
+
+/* Círculo verde de fundo */
+.circulo {
+  background-color: #017143;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(600px at right 800px);
+  z-index: -1; /* atrás dos elementos */
+}
+
+
